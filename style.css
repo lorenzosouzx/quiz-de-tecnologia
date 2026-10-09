@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  color: #e6edf3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 24px 16px;
+}
+
+#jogo {
+  text-align: center;
+  background-color: #161b22;
+  padding: 40px 50px;
+  margin: auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  width: 520px;
+  max-width: 100%;
+}
+
+h1 {
+  color: #58a6ff;
+  margin-bottom: 6px;
+  font-size: 28px;
+}
+
+#subtitulo {
+  color: #9da7b3;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+#barra-progresso {
+  width: 100%;
+  height: 6px;
+  background-color: #21262d;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#barra-progresso-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #58a6ff, #1f6feb);
+  width: 100%;
+  transition: width 0.1s linear;
+}
+
+.card-tema {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+  padding: 16px;
+  background-color: #21262d;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-tema:hover {
+  background-color: #30363d;
+  transform: translateY(-2px);
+  border-color: #58a6ff;
+}
+
+.card-tema strong {
+  display: block;
+  font-size: 16px;
+  color: #58a6ff;
+  margin-bottom: 4px;
+}
+
+.card-tema span {
+  font-size: 13px;
+  color: #9da7b3;
+}
+
+button.opcao {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 14px;
+  background-color: #21262d;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+button.opcao:not(:disabled):hover {
+  background-color: #30363d;
+}
+
+.certo {
+  background-color: #196127 !important;
+  border-color: #3fb950 !important;
+}
+
+.errado {
+  background-color: #a42523 !important;
+  border-color: #f85149 !important;
+}
+
+#placar {
+  color: #9da7b3;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.streak {
+  color: #e3b341;
+  font-weight: bold;
+}
+
+#botao-reiniciar,
+#botao-modo,
+#botao-proxima {
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #1f6feb, #174ea6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#botao-reiniciar:hover,
+#botao-proxima:hover {
+  opacity: 0.9;
+}
+
+.fade-in {
+  animation: fade 0.3s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+[hidden] {
+  display: none !important;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+button:focus-visible, input:focus-visible, h2:focus, #feedback:focus {
+  outline: 3px solid #e3b341;
+  outline-offset: 4px;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+#tempo-restante {
+  color: #9da7b3;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#feedback {
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+#feedback:empty {
+  margin-top: 0;
+}
+
+#feedback:not(:empty) {
+  padding: 16px;
+  text-align: left;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  background: #0d1117;
+}
+
+#botao-modo {
+  display: block;
+  width: 100%;
+}
+
+.explicacao {
+  display: block;
+  margin-top: 10px;
+  color: #b7c3d0;
+  font-size: 14px;
+}
+
+.regras {
+  color: #b7c3d0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+fieldset {
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 18px 0 10px;
+  text-align: left;
+}
+
+legend {
+  padding: 0 6px;
+  font-size: 14px;
+  color: #58a6ff;
+}
+
+fieldset label {
+  display: block;
+  padding: 9px 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+fieldset label span {
+  display: block;
+  padding-left: 25px;
+  margin-top: 3px;
+  color: #9da7b3;
+  font-size: 13px;
+}
+
+input[type="radio"] {
+  accent-color: #58a6ff;
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.dica {
+  color: #9da7b3;
+  line-height: 1.5;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  #jogo {
+    padding: 24px 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+}

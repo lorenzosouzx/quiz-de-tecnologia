@@ -1,0 +1,15 @@
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Arquivos temporários e ferramentas
+node_modules/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

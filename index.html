@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Tecnologia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="jogo">
+    <h1>⚡ Quiz de Tecnologia</h1>
+    <p id="subtitulo">Escolha um tema para começar</p>
+    <section id="preparacao" aria-label="Como jogar">
+      <p class="regras">Primeiro, entenda. Depois, desafie-se.<br>5 perguntas por tema, com explicações após cada resposta.</p>
+      <fieldset>
+        <legend>Escolha seu ritmo</legend>
+        <label><input type="radio" name="modo" value="estudo" checked> Estudo <span>Sem pressa: responda, leia e aprenda</span></label>
+        <label><input type="radio" name="modo" value="desafio"> Desafio <span>10 segundos por pergunta</span></label>
+      </fieldset>
+      <p class="dica">Comece pelo estudo ou escolha o desafio diretamente. No desafio, cada acerto vale 1 ponto e os 10 segundos começam ao abrir a pergunta, mesmo se você trocar de aba. As explicações não têm limite de tempo.</p>
+    </section>
+    <p id="tempo-restante" hidden></p>
+    <div id="barra-progresso" aria-hidden="true" hidden><div id="barra-progresso-fill"></div></div>
+    <div id="temas"></div>
+    <p id="feedback" tabindex="-1"></p>
+    <div id="acoes"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
