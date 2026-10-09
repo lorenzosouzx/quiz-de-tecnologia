@@ -1,15 +1,15 @@
 # Quiz de Tecnologia
 
-Quiz introdutório em português do Brasil, desenvolvido com HTML, CSS e JavaScript puro para mostrar meu aprendizado e testar meus conhecimentos em programação e QA. O projeto também tem como objetivo colocar em prática o curso de Git que fiz, aplicando o versionamento durante sua evolução.
+Quiz introdutório em português, desenvolvido com HTML, CSS e JavaScript para mostrar meu aprendizado e testar meus conhecimentos em programação e QA e também tem como objetivo colocar em prática o curso de Git que fiz da Microsoft Learn.
 
-O aplicativo é executado localmente no navegador, sem backend ou serviços externos.
+O Quiz é executado localmente no navegador, sem backend ou serviços externos.
 
 ## Objetivos de aprendizado
 
-- Praticar HTML, CSS e JavaScript na construção de uma aplicação interativa.
-- Exercitar conhecimentos de programação por meio das perguntas e da implementação do quiz.
-- Aplicar QA na definição de cenários de teste, na verificação dos resultados e no registro de limitações e melhorias.
-- Colocar em prática os conceitos do curso de Git, acompanhando alterações e organizando o histórico do projeto com commits.
+- Praticar HTML, CSS e JavaScript
+- Testar seus conhecimentos de tecnologia e suas áreas pelas perguntas
+- Aplicar QA nos testes, na verificação dos resultados e no registro de limitações e melhorias
+- Colocar em prática os conceitos do curso de Git, acompanhando alterações e organizando o histórico do projeto com commits
 
 O código, os testes automatizados e o roteiro de testes manuais registram o trabalho realizado até aqui. O projeto usa Git para versionamento local. O código está disponível no repositório [quiz-de-tecnologia](https://github.com/lorenzosouzx/quiz-de-tecnologia).
 
